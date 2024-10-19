@@ -1,0 +1,74 @@
+SETUP VPS WOIDEN (FREE 3 DAYS)
+-==AWALAN SETELAH LOGIN==-
+UBUNTU/DEBIAN
+sudo apt-get update&&sudo apt-get upgrade -y
+sudo apt-get install tmux -y
+sudo apt-get install nano -y
+
+ALMALINUX
+yum update&&yum upgrade -y
+yum install tmux -y
+yum install nano -y
+
+nano p.sh
+bash p.sh
+
+-==p.sh==-
+sudo apt-get install screenfetch -y
+sudo apt-get install ffmpeg -y
+sudo apt-get install curl -y
+sudo apt-get install git -y
+sudo apt-get install zip -y
+curl -sL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install nodejs
+
+UBUNTU/DEBIAN
+-==q.sh==-
+sudo apt-get install curl -y
+sudo apt-get install git -y
+sudo apt-get install zip -y
+sudo apt-get install python3 python3-pip -y
+git clone https://github.com/akasakaid/blumtod.git
+git clone https://github.com/akasakaid/NotPixTod.git
+cd blumtod
+pip install -r requirements.txt
+cd ../NotPixTod
+pip install -r requirements.txt
+wget -qO- bench.sh | bash
+
+ALMALINUX
+-==q.sh==-
+yum install git -y
+yum install zip -y
+yum install python3 python3-pip -y
+git clone https://github.com/akasakaid/blumtod.git
+git clone https://github.com/akasakaid/NotPixTod.git
+cd blumtod
+pip install -r requirements.txt
+cd ../NotPixTod
+pip install -r requirements.txt
+wget -qO- bench.sh | bash
+
+-==WARP==-
+wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
+
+
+@@ OPSIONAL
+-==SPEEDTEST==-
+curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
+sudo apt-get install speedtest
+
+-==RCLONE==-
+curl https://rclone.org/install.sh | sudo bash
+rclone config
+PILIH 46
+ownugm
+url: https://simpan.ugm.ac.id/remote.php/webdav/
+username: yuniariagustin
+pw: Yunijan280913
+rclone ls ownugm:
+rclone copy botreminder.zip ownugm:backup
+
+
+@@ LINK SC BOT
+https://simpan.ugm.ac.id/s/WUxywvmuCO0ZCTC/download
